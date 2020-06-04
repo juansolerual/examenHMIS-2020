@@ -32,7 +32,7 @@ public class CheckItemDoneTestTest {
   JavascriptExecutor js;
   @Before
   public void setUp() {
-    System.setProperty("webdriver.gecko.driver",  "drivers/geckodriver.exe");
+    // System.setProperty("webdriver.gecko.driver",  "drivers/geckodriver.exe");
 
     FirefoxOptions firefoxOptions = new FirefoxOptions();
     firefoxOptions.setHeadless(true);
@@ -109,7 +109,7 @@ public class CheckItemDoneTestTest {
       e.printStackTrace();
     }
     driver.findElement(By.xpath("//div[@id=\'root\']/div/div/div/div/div/div[3]/button/i")).click();
-    
+
 
   }
 }
